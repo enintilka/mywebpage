@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enea's Ntilka Page - QA Importance</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+    <style>
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none; /* Initially hidden */
+        }
+
+
+
+
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #2c0685;
+            color: #ffffff;
+
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 80px;
+        }
+
+        header h1 {
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: #f2e3e3;
+            text-decoration: none;
+            
+            display: inline-block; /* Allow padding to affect dimensions */
+            padding: 10px 20px; /* Add padding for larger clickable area */
+            border-radius: 50%; /* Make it circular */
+            background-color: #3498db; /* Background color for button effect */
+            transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+        }
+
+        /* Main Section Styling */
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            border: 1px solid #2c0685;
+            border-radius: 100px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        
+
+        /* Footer Styling */
+        footer {
+            background-color: #2c0685;
+            margin-top: 40px;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 80%;
+            max-width: 1200px; /* Set a max-width for the footer */
+            margin: 0px auto 0;  /* Center the footer with automatic left and right margins */
+            /* Full width up to the max-width */
+            border-top: 4px solid #0516d3;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(185, 165, 235, 0.3);
+        }
+        footer p {
+    margin: -5px 0; /* Add vertical spacing between paragraphs */
+}
+footer a {
+    color: #ffcc00; /* Gold link color */
+    text-decoration: 0; /* Remove underline */
+    transition: color 0s; /* Smooth transition for hover effect */
+}
+footer a:hover {
+    color: #c71e1e; /* Change color on hover for better visibility */
+}
+@media (max-width: 600px) {
+    footer {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Smaller font size for better fit */
+    }
+}
+        
+            
+    </style>
+</head>
+<body>
+    
+    <button id="backToTop" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px; background-color: #010101; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>Back to Top</button>
+
+    <script>
+        const backToTopButton = document.getElementById('backToTop');
+    
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+    
+        backToTopButton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+         
+    </script>
+</body>    
+    
+    <!-- Header Section -->
+    <header>
+        <h1><a href="#blog">Enea's Ntilka Page</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#blog">Importance of QA</a></li>
+                <li><a href="#projects">Projects (self-practice)</a></li>
+                <li><a href="#on-going-tests">On-Going Tests</a></li>
+                <li><a href="#automation-tests">Automation Tests</a></li>
+                <li><a href="#certifications-and-courses">Certifications and Courses</a></li>
+                <li><a href="#my-cv">My CV</a></li> <!-- Link to CV Section -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main>
+       
+        <section id="about-me">
+            <h2> About me</h2>
+            <p>Hello and welcome to my page! My name is Enea Ntilka, and I’m a 29-year-old junior software tester.
+
+                Until recently, I worked in hospitality as a barista. My career shift began while working at an IT company, where my daily interactions with developers sparked a newfound interest in the tech world. Fascinated by the industry’s complexity and potential, I was inspired to explore it further.
+                
+                My girlfriend has been a tremendous support throughout this journey, encouraging me to take my first steps into IT. Her belief in me helped me navigate the early stages of this career change, which wasn’t always easy. With her encouragement, I discovered my interest in testing—something that aligns well with my background in electronic engineering and my love for understanding how things work.
+                
+                To lay a solid foundation, I pursued the ISTQB Foundation Level certification, which I’m proud of achieving in very few weeks. Since then, I’ve engaged in hands-on practice, testing various websites, documenting findings, and refining my skills. This website, which I built with the help of AI, is part of my journey as I look forward to contributing to the industry as a software tester.
+                
+                Thank you for visiting my page, and I’m excited to connect and continue learning on my path to becoming an accomplished software tester.
+            </p>
+            <section id="blog">
+                <h2>The Importance of QA in Software Development</h2>
+                <h3>Quality Assurance (QA) plays a crucial role in the development and maintenance of products and services across various industries. Here are ten reasons why QA is important</h3>
+                <p><strong>1)</strong>Ensures Product Quality: QA processes help identify defects and ensure that products meet specified requirements, leading to higher quality and customer satisfaction.</p>
+                <p><strong>2)</strong>Reduces Costs: By catching issues early in the development process, QA helps minimize the costs associated with fixing defects later, which can be significantly higher.</p>
+                <p><strong>3)</strong>Enhances Customer Satisfaction: Delivering a high-quality product fosters trust and loyalty among customers, leading to positive reviews and repeat business.</p>
+                <p><strong>4)</strong>Increases Efficiency: QA helps streamline processes and improve workflows, leading to increased efficiency in development and production.</p>
+                <p><strong>5)</strong>Mitigates Risks: Through thorough testing and validation, QA helps identify potential risks and issues before they escalate, reducing the likelihood of project failure.</p>
+                <p><strong>6)</strong>Supports Compliance: Many industries have regulatory requirements that mandate specific quality standards. QA ensures compliance with these regulations, avoiding legal issues and penalties.</p>
+                <p><strong>7)</strong>Facilitates Continuous Improvement: QA processes promote a culture of continuous improvement by encouraging regular assessments and adjustments to enhance product and process quality.</p>
+                <p><strong>8)</strong>Boosts Team Morale: A strong QA culture can enhance team confidence and morale, as team members feel supported and assured that their work meets high standards.</p>
+                <p><strong>9)</strong>Improves Market Reputation: Consistently delivering quality products helps build a strong market reputation, attracting new customers and retaining existing ones.</p>
+                <p><strong>10)</strong>Provides Valuable Feedback: QA processes provide critical insights and feedback that can inform future development, ensuring that teams learn from past experiences and continually improve.</p>
+            </section>
+        
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>I have completed functional testing and UI/UX testing on three different websites. Here are the analytical insights on what I accomplished:</p>
+            <h3>Functional Testing</h3>
+            <h3>●  <a href="https://www.vacuumlabs.com" target="_blank">Vacuumlabs</a> Website</h3>
+
+            <p>During my testing of the Vacuumlabs website, I reported critical 
+                defects in the "Apply Now" form, enhancing the user experience 
+                for sales applicants. I developed test scenarios for the job 
+                application section, identified UI issues, and suggested 
+                improvements. Additionally, I used JIRA for bug reporting and 
+                JMeter for performance testing to support the development team.</p>
+            <h3>UI/UX Testing</h3>
+            <h3>● <a href="https://moneyhoon.sk/" target="_blank">Moneyhoon</a>Website</h3> 
+            <p>I detected UI/UX issues and suggested enhancements to improve 
+                the overall user interface. I prepared and submitted a detailed 
+                defect report, contributing to the website's quality through 
+                thorough testing and feedback.</p>
+            <h3>● <a href="https://bainry.com/" target="_blank">Bainry</a> Website</h3> 
+            <p>conducted thorough UI testing to identify defects, discovering 
+                a significant issue with text display when switching from Slovak 
+                to English. I prepared and submitted a detailed defect report 
+                outlining my findings and suggestions for improvement. </p>        
+        </section>
+          
+
+        <section id="on-going-tests">
+            <h2>On-Going Tests</h2>
+            <p>I am currently studying to earn a Cypress certification through LambdaTest. See the link <a href="https://www.lambdatest.com/certifications/cypress-101" target="_blank">below</a></p>
+            
+        </section>
+
+        <section id="automation-tests">
+            <h2>Automation Tests</h2>
+            <p>You can click the link below to view some of my Cypress practice examples on my <a href="https://github.com/enintilka" target="_blank">Github</a></p>
+        </section>
+        <section id="certifications-and-courses">
+            <h2>Certifications and Courses</h2>
+            <h3>ISTQB Foundation Level Certification 2024</h3>
+            <p>Completed the ISTQB Foundation Level Certification in 2024, gaining foundational knowledge in software testing principles.</p>
+            <p>View my certification below:</p>
+            <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/CTFLv4-2024-01523-CASTB_Enea_Ntilka_page-0001.jpg
+            " alt="ISTQB Certification" style="width: 200px; height: auto;" />
+            <h3>MindMajix Certification 2024</h3>
+            <p>Hands-on training covering advanced software testing concepts, including test case creation, defect reporting, and in-depth SDLC and STLC testing methodologies</p>
+            <p>View my certification below:</p>
+            <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/Enea%20Ntilka%20-%20MindMajix_page-0001.jpg" alt="MindMajix Certification" style="width: 200px; height: auto;" />
+            <h3>Udemy courses</h3>
+            <p>●Cypress from zero to the cloud</p>
+            <p>Completed a course on Cypress focused on creating fast, reliable 
+                automated tests in JavaScript. Developed skills in test setup, 
+                web element interaction, and continuous integration with GitHub 
+                Actions, establishing a strong foundation in automated GUI 
+                testing and test management best practices.</p>
+            <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/Cypress%20udemy%20certification.jpg" alt="Cypress Udemy Certification" style="width: 200px; height: auto;" />   
+            <p>● The Complete 2024 Software Testing Bootcamp (Udemy)</p>
+            <p>Gained skills in creating test cases, test plans, and scenarios. 
+                Proficient in bug reporting using Jira and familiar with 
+                functional, regression, and performance testing.</p>
+            <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/complete%20software%20testing%20bootcamp%20udemy%20certification.jpg" alt="Complere Udemy Certification" style="width: 200px; height: auto;" />   
+            <p>● Manual Software Testing (Udemy)</p>
+            <p>Acquired a thorough understanding of manual software testing and 
+                SDLC/STLC processes.</p>
+            <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/manual%20software%20testing%20udemy%20certification.jpg" alt="Manual Software Testing udemy certification" style="width: 200px; height: auto;" />       
+        </section>
+
+        <section id="my-cv">
+            <h3>Enea Ntilka</h3>
+            <p>Address: Agátová 1, 900 28 Ivanka pri Dunaji</p>
+            <p>Phone: +30 6973946598</p>
+            <p>Email: eniasntilka@gmail.com</p>
+            <h2>ISTQB Certified Software Tester</h2>
+            <p>I am an ISTQB Foundation Level certified software tester with a solid 
+                background in manual, UI/UX, and performance testing. I have practical 
+                experience using tools such as Jira, JMeter, and Cypress. My objective 
+                is to apply my expertise to ensure software quality while continuing 
+                to grow in the field of software testing. I possess a deep 
+                understanding of the Software Development Life Cycle (SDLC) and 
+                Software Testing Life Cycle (STLC), and I am ready to take on new 
+                challenges and contribute to a team.</p>
+                 
+            
+            <h3>Work Experience</h3>
+            <p>●Junior Manual Tester: (Intern Vacuumlabs, Bratislava Feb 2024 - May 
+                2024 )</p>
+            <p>Conducted manual testing for Vacuumlabs' internal HR 
+                application, 'Charles,' focusing on UI/UX testing and defect 
+                reporting through Jira.</p>
+            <h3>Self-Practice - Manual Tester:Independent work during 
+                free time(September 2024-Present)</h3>         
+            <p>●<strong>Vacuumlabs Website:</strong> 
+                During my testing of the Vacuumlabs website, I reported critical 
+                defects in the "Apply Now" form, enhancing the user experience 
+                for sales applicants. I developed test scenarios for the job 
+                application section, identified UI issues, and suggested 
+                improvements. Additionally, I used JIRA for bug reporting and 
+                JMeter for performance testing to support the development team.</p>     
+            <p>●<strong>Moneyhoon Website:</strong> 
+                I detected UI/UX issues and suggested enhancements to improve 
+                the overall user interface. I prepared and submitted a detailed 
+                defect report, contributing to the website's quality through 
+                UI testing and feedback.</p>
+            <p>●<strong>Bainry Website:</strong> 
+                I conducted thorough UI testing to identify defects, discovering 
+                a significant issue with text display when switching from Slovak 
+                to English. I prepared and submitted a detailed defect report 
+                outlining my findings and suggestions for improvement.</p>    
+            <h3>Skills</h3>
+            <p>● Programming Languages: Python (Basic), JavaScript (Basic)</p>
+            <p>List of skills relevant to your profession.</p>
+            <p>● Automation Tools: Cypress (Proficient)</p>
+            <p>● Manual Testing Tool: Jira,Slack (Proficient)</p>
+            <p>● Performance Testing Tool: Jmeter (Basic)</p>
+            <p>● Software: Microsoft Word, Excel, PowerPoint (Intermediate)</p>
+            <p>● SQL: Basic knowledge for database testing</p>
+            <p>● HTML: Good knowledge for Website's testing with Cypress </p>
+            <p>● CSS: Beginner </p>
+            <h3>Certifications </h3>
+            <p>● ISTQB Foundation Level (2024)</p>
+            <p>● Manual Testing Training 1on1(MindMajix Academy)</p>
+            <h3>Personal Skills</h3>
+            <p>● Attention to Detail</p>
+            <p>● Adaptability</p>
+            <p>● Team Collaboration</p>
+            <p>● Communication</p>
+            <p>● Analytical Thinking</p>
+            <p>● Time Management</p>
+            <p>● Proactive Approach</p>
+            <p>● Stress Resilience</p>
+            <h3>Courses & Training</h3>
+            <p>● Mindmajix Academy 1-on-1 Course (Completed) 
+                Hands-on training covering advanced software testing concepts, 
+                including test case creation, defect reporting, and in-depth 
+                SDLC and STLC testing methodologies.</p>
+            <p>● The Complete 2024 Software Testing Bootcamp (Udemy) 
+                Gained skills in creating test cases, test plans, and scenarios. 
+                Proficient in bug reporting using Jira and familiar with 
+                functional, regression, and performance testing. </p> 
+            <p>● Manual Software Testing (Udemy) 
+                Acquired a thorough understanding of manual software testing and 
+                SDLC/STLC processes. </p>
+            <p>● Cypress from zero to the cloud (Udemy) 
+                Completed a course on Cypress focused on creating fast, reliable 
+                automated tests in JavaScript. Developed skills in test setup, 
+                web element interaction, and continuous integration with GitHub 
+                Actions, establishing a strong foundation in automated GUI 
+                testing and test management best practices.</p>
+                <h3>Education</h3>
+                <p> ● Technological University of Crete Sep 2013 - Jul 2018 Degree in 
+                    Electronic Engineering (Paused)   
+                     </p>
+                <p>● Technical High School, Koropi Sep 2010 - Jul 2013 Diploma in 
+                    Electronic Engineering</p>
+            <h3>Languages</h3>
+            <p>● Greek: Native</p>
+            <p>● English: Fluent(Β2)</p>
+            <p>● Slovak: Beginner </p>
+            
+            <h3>Interests</h3>
+            <p>● Hiking</p>
+            <p>● cycling</p>
+            <p>● bowling</p>
+            <p>● Traveling</p>
+            <p>● Continuous learning through online courses on software testing 
+                and development  </p>
+                <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/enintilka/Website-Assets/main/MyNewEnea%20Ntilka%20CV.pdf&embedded=true" target="_blank">View My CV</a>
+   
+
+        </section>
+    </main>
+    
+
+    <!-- Footer Section -->
+    <!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Testing Dashboard. All rights reserved.</p>
+    <p>
+        <a href="https://www.linkedin.com/in/eneantilka/" target="_blank">
+            <i class="fa-brands fa-linkedin" style="font-size: 24px; color: #ffffff;"></i>
+        </a>
+        <span>Connect with me on LinkedIn</span>
+    </p>
+</footer>
+
+</body>
+</html>
