@@ -9,52 +9,15 @@
     
 
     <style>
-        /* Media Queries for Mobile Responsiveness */
-    @media (max-width: 600px) {
-        header {
-            padding: 1rem; /* Adjust padding */
+       /* Root colors for consistent theme */
+       :root {
+            --primary-color: #2c0685; /* Purple theme */
+            --secondary-color: #ffcc00; /* Accent Gold */
+            --background-color: #f4f4f9;
+            --text-color: #333;
+            --header-footer-bg: #2c0685;
+            --link-color: #3498db;
         }
-
-        nav ul {
-            flex-direction: column; /* Stack items vertically */
-        }
-
-        nav ul li {
-            margin: 0.5rem 0; /* Vertical spacing for stacked items */
-        }
-
-        main {
-            padding: 1rem; /* Adjust main padding for smaller screens */
-        }
-
-       footer {
-    padding: 10px; /* Adjust footer padding */
-    font-size: 14px; /* Smaller font size for better fit */
-    position: fixed; /* Fix the footer position */
-    bottom: 0; /* Align it at the bottom */
-    right: 0; /* Align it to the right */
-    width: calc(100% - 20px); /* Fill the right side with some margin */
-    background-color: #2c0685; /* Optional: ensure footer has a background */
-    z-index: 1000; /* Ensure it stays above other elements */
-    border-top-left-radius: 10px; /* Optional: rounded corners */
-}
-
-        section {
-            padding: 1rem; /* Adjust section padding */
-        }
-    }
-        /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            display: none; /* Initially hidden */
-        }
-
-
-
-
 
         /* Basic Reset */
         * {
@@ -66,64 +29,91 @@
         /* Body Styling */
         body {
             font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
             line-height: 1.6;
         }
 
         /* Header Styling */
         header {
-            background-color: #2c0685;
-            color: #ffffff;
-
-            padding: 1.5rem;
+            background-color: var(--header-footer-bg);
+            color: #b52b2b;
+            padding: 2rem;
             text-align: center;
-            border-radius: 80px;
+            border-radius: 0 0 200px 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        header h1 {
-            margin-bottom: 1rem;
+        header h1 a {
+            color: #fff;
+            text-decoration: none;
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 1rem;
         }
 
         nav ul li {
-            margin: 0 1.5rem;
+            margin: 1rem;
         }
 
         nav ul li a {
-            color: #f2e3e3;
+            color: var(--secondary-color);
             text-decoration: none;
-            
-            display: inline-block; /* Allow padding to affect dimensions */
-            padding: 10px 20px; /* Add padding for larger clickable area */
-            border-radius: 50%; /* Make it circular */
-            background-color: #3498db; /* Background color for button effect */
-            transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+            padding: 10px 20px;
+            background: var(--link-color);
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #256ba3;
         }
 
         /* Main Section Styling */
         main {
             padding: 2rem;
-            max-width: 800px;
+            max-width: 1000px;
             margin: auto;
         }
 
         section {
-            margin-bottom: 2.5rem;
-            padding: 1.5rem;
-            border: 1px solid #2c0685;
-            border-radius: 100px;
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--primary-color);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            color: #333;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: var(--text-color);
+            font-size: 1.2rem;
             margin-bottom: 0.5rem;
         }
-        
-        
+
+        /* Links and Buttons Styling */
+        a, button {
+            color: var(--link-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        a:hover, button:hover {
+            color: var(--primary-color);
+        }
 
         /* Footer Styling */
         footer {
@@ -133,17 +123,17 @@
             text-align: center;
             padding: 20px;
             position: relative;
-            bottom: 0;
+            bottom: 5;
             width: 80%;
-            max-width: 1200px; /* Set a max-width for the footer */
+            max-width: 1000px; /* Set a max-width for the footer */
             margin: 0px auto 0;  /* Center the footer with automatic left and right margins */
             /* Full width up to the max-width */
             border-top: 4px solid #0516d3;
-            border-radius: 10px;
+            border-radius: 100px;
             box-shadow: 0 4px 10px rgba(185, 165, 235, 0.3);
         }
         footer p {
-    margin: -5px 0; /* Add vertical spacing between paragraphs */
+    margin: -px 0; /* Add vertical spacing between paragraphs */
 }
 footer a {
     color: #ffcc00; /* Gold link color */
@@ -159,8 +149,32 @@ footer a:hover {
         font-size: 14px; /* Smaller font size for better fit */
     }
 }
-        
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
             
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }        
     </style>
 </head>
 <body>
@@ -282,19 +296,19 @@ footer a:hover {
             <p>View my certification below:</p>
             <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/Enea%20Ntilka%20-%20MindMajix_page-0001.jpg" alt="MindMajix Certification" style="width: 200px; height: auto;" />
             <h3>Udemy courses</h3>
-            <p>●Cypress from zero to the cloud</p>
+            <p><strong>●Cypress from zero to the cloud</strong></p>
             <p>Completed a course on Cypress focused on creating fast, reliable 
                 automated tests in JavaScript. Developed skills in test setup, 
                 web element interaction, and continuous integration with GitHub 
                 Actions, establishing a strong foundation in automated GUI 
                 testing and test management best practices.</p>
             <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/Cypress%20udemy%20certification.jpg" alt="Cypress Udemy Certification" style="width: 200px; height: auto;" />   
-            <p>● The Complete 2024 Software Testing Bootcamp (Udemy)</p>
+            <p><strong>● The Complete 2024 Software Testing Bootcamp (Udemy)</strong></p>
             <p>Gained skills in creating test cases, test plans, and scenarios. 
                 Proficient in bug reporting using Jira and familiar with 
                 functional, regression, and performance testing.</p>
             <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/complete%20software%20testing%20bootcamp%20udemy%20certification.jpg" alt="Complere Udemy Certification" style="width: 200px; height: auto;" />   
-            <p>● Manual Software Testing (Udemy)</p>
+            <p><strong>● Manual Software Testing (Udemy)</strong></p>
             <p>Acquired a thorough understanding of manual software testing and 
                 SDLC/STLC processes.</p>
             <img src="https://raw.githubusercontent.com/enintilka/Website-Assets/main/manual%20software%20testing%20udemy%20certification.jpg" alt="Manual Software Testing udemy certification" style="width: 200px; height: auto;" />       
