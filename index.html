@@ -28,9 +28,16 @@
         }
 
         footer {
-            padding: 10px; /* Adjust footer padding */
-            font-size: 14px; /* Smaller font size for better fit */
-        }
+        padding: 10px; /* Adjust footer padding */
+        font-size: 14px; /* Smaller font size for better fit */
+        position: fixed; /* Fix the footer position */
+        bottom: 0; /* Align it at the bottom */
+        right: 0; /* Align it to the right */
+        width: 200px; /* Set a specific width */
+        background-color: #2c0685; /* Optional: ensure footer has a background */
+        z-index: 1000; /* Ensure it stays above other elements */
+        border-top-left-radius: 10px; /* Optional: rounded corners */
+    }
 
         section {
             padding: 1rem; /* Adjust section padding */
